@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_YPdBwHqcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.ide.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_YPdBwXqcEeKrrPVUuz4eaQ" elementId="com.cane.j.app.rubber.window" label="Refrigerator door rubber" width="600" height="400">
+    <children xsi:type="basic:PartStack" xmi:id="_x11-cHxPEeKBxcTm4dUwYA" elementId="com.cane.j.app.rubber.partstack.1">
+      <children xsi:type="basic:Part" xmi:id="_zgF5wHxPEeKBxcTm4dUwYA" elementId="com.cane.j.app.rubber.part.default" contributionURI="bundleclass://com.cane.j.app.rubber/com.cane.j.app.rubber.part.RubberPart" label="Rubbers"/>
+    </children>
+  </children>
+  <commands xmi:id="_sQ3oEHxREeKBxcTm4dUwYA" elementId="com.cane.j.app.rubber.command.add" commandName="add" description="add loop into list"/>
+  <commands xmi:id="_1bRFoHxSEeKBxcTm4dUwYA" elementId="com.cane.j.app.rubber.command.del" commandName="del" description="delete loop from the list"/>
+  <commands xmi:id="_6Rgb0HxSEeKBxcTm4dUwYA" elementId="com.cane.j.app.rubber.command.update" commandName="update" description="update loop in the list"/>
+  <addons xmi:id="_YPdBwnqcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_YPdBw3qcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_YPdBxHqcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_YPdBxXqcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_YPdBxnqcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_YPdBx3qcEeKrrPVUuz4eaQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

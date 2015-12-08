@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="rubber"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="clearPersistedState"
+               value="true">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.cane.j.app.rubber/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="rubber">
+         </property>
+         <property
+               name="com.cane.j.app.rubber.id"
+               value="1">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            id="com.cane.j.app.rubber.intro">
+      </intro>
+      <introProductBinding
+            introId="com.cane.j.app.rubber.intro"
+            productId="com.cane.j.app.rubber.product">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            content="introContent.xml"
+            id="com.cane.j.app.rubber.introConfigId"
+            introId="com.cane.j.app.rubber.intro">
+         <presentation
+               home-page-id="root">
+            <implementation
+                  kind="html"
+                  os="win32,linux,macosx"
+                  style="content/shared.css">
+            </implementation>
+         </presentation>
+      </config>
+   </extension>
+
+</plugin>
